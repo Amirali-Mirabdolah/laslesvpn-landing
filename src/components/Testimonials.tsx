@@ -18,16 +18,14 @@ const testimonials: Testimonial[] = [
     rating: "4.5",
     quote:
       "“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.",
-    avatar:
-      "https://images.pexels.com/photos/14950779/pexels-photo-14950779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200&fit=crop",
+    avatar: "/images/avatar1.png"
   },
   {
     name: "Yessica Christy",
     location: "Shanxi, China",
     rating: "4.5",
     quote: "“I like it because I like to travel far and still can connect with high speed.”.",
-    avatar:
-      "https://images.pexels.com/photos/7717254/pexels-photo-7717254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200&fit=crop",
+    avatar: "/images/avatar2.png"
   },
   {
     name: "Kim Young Jou",
@@ -35,8 +33,7 @@ const testimonials: Testimonial[] = [
     rating: "4.5",
     quote:
       "“This is very unusual for my business that currently requires a virtual private network that has high security.”.",
-    avatar:
-      "https://images.pexels.com/photos/34930167/pexels-photo-34930167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200&fit=crop",
+    avatar: "/images/avatar3.png"
   },
   {
     name: "Eine Voll",
@@ -44,8 +41,7 @@ const testimonials: Testimonial[] = [
     rating: "4.5",
     quote:
       "“The connection is stable everywhere I go. LaslesVPN makes remote work feel completely secure and effortless.”.",
-    avatar:
-      "https://images.pexels.com/photos/14950779/pexels-photo-14950779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200&fit=crop",
+    avatar: "/images/avatar1.png"
   },
 ];
 
@@ -126,9 +122,8 @@ export default function Testimonials() {
           {testimonials.map((item, index) => (
             <article
               key={item.name}
-              className={`w-[85vw] max-w-[400px] shrink-0 snap-start rounded-[10px] border-2 bg-white p-[30px] transition-colors duration-300 lg:w-[400px] ${
-                index === active ? "border-primary" : "border-line"
-              }`}
+              className={`w-[85vw] max-w-[400px] shrink-0 snap-start rounded-[10px] border-2 bg-white p-[30px] transition-colors duration-300 lg:w-[400px] ${index === active ? "border-primary" : "border-line"
+                }`}
             >
               <div className="flex items-center gap-5">
                 <Image
@@ -161,9 +156,8 @@ export default function Testimonials() {
               type="button"
               aria-label={`Go to testimonial ${index + 1}`}
               onClick={() => goTo(index)}
-              className={`h-[15px] cursor-pointer rounded-full transition-all duration-300 ${
-                index === active ? "w-[45px] bg-primary" : "w-[15px] bg-[#DDE0E4] hover:bg-primary/40"
-              }`}
+              className={`h-[15px] cursor-pointer rounded-full transition-all duration-300 ${index === active ? "w-[45px] bg-primary" : "w-[15px] bg-[#DDE0E4] hover:bg-primary/40"
+                }`}
             />
           ))}
         </div>
