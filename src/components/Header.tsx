@@ -25,13 +25,13 @@ export default function Header() {
         ))}
       </nav>
 
-      <div className="flex items-center gap-[30px]">
+      <div className="flex items-center gap-3 sm:gap-[30px]">
         <a href="#" className="text-base font-medium text-ink transition-colors hover:text-primary">
           Sign In
         </a>
         <a
           href="#"
-          className="rounded-full border border-primary px-[38px] py-[10px] text-base font-medium text-primary transition-all hover:bg-primary hover:text-white hover:shadow-cta"
+          className="rounded-full border border-primary px-3 sm:px-[38px] py-[10px] text-base font-medium text-primary transition-all hover:bg-primary hover:text-white hover:shadow-cta"
         >
           Sign Up
         </a>

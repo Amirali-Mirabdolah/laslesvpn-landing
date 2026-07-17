@@ -44,19 +44,20 @@ export default function Stats() {
         {stats.map((stat, index) => (
           <div
             key={stat.label}
-            className={`flex items-center justify-center gap-9 py-[22px] sm:py-0 ${
-              index > 0 ? "border-t border-line-soft sm:border-t-0 sm:border-l" : ""
-            }`}
+            className={`flex items-center justify-center gap-9 py-[22px] sm:py-0 ${index > 0 ? "border-t border-line-soft sm:border-t-0 sm:border-l" : ""
+              }`}
           >
+            {/* <div className="bg-red-300 w-max"> */}
             <span className="flex h-[55px] w-[55px] items-center justify-center rounded-full bg-primary-soft">
               {stat.icon}
             </span>
-            <span>
+            <span className="flex flex-col items-center w-[93px]">
               <span className="block text-[25px] leading-[30px] font-bold text-ink">
                 {stat.value}
               </span>
               <span className="mt-1 block text-xl text-body">{stat.label}</span>
             </span>
+            {/* </div> */}
           </div>
         ))}
       </div>
